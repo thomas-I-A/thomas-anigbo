@@ -1,0 +1,104 @@
+
+h1 {
+ text-transform: uppercase;
+font-size: 30px;
+ font-weight: 4px;
+ margin-left: 5%;
+ margin-top: 24px;
+ color:rgb(236, 235, 235);
+ font-family: "Libre Baskerville", serif;
+}
+
+
+
+.home{
+    width: 80px;
+    margin-top: 25px;
+    position: absolute;
+        }
+
+.essays{
+  width: 80px;
+  position: relative;
+}
+
+
+.twitter{
+  width: 80px;
+   margin-top: 5px;
+   position: absolute;
+}
+
+.bio{
+  width: 80px;
+ margin-top: -18px;
+position: absolute;
+}
+
+.faq{
+  width: 80px;
+ margin-top: 11px;
+position: absolute;
+}
+
+.quotes{
+   width: 80px;
+position: absolute;
+margin-top: 31px;
+}
+
+.raq{
+  width: 80px;
+position: absolute;
+margin-top: 39px;
+}
+
+.projects{
+   width: 80px;
+   position: absolute;
+   margin-top: 82px;
+}
+
+.website{
+  width: 80px;
+   position: absolute;
+   margin-top: 39px;
+}
+
+.contact-me{
+  font-size: 20px;
+  text-align: center;
+  line-height: 2;
+  background-color: rgb(21, 122, 70);
+  color: beige;
+  width: 346px;
+  margin-left: 14%;
+  margin-top: -33px;
+  padding: 2px;
+  line-height: 1;
+}
+
+.mail{
+  color: beige;
+}
+
+.card {
+  max-width: 20%;
+  background-color: white;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 35%;
+  padding: 20px 30px;
+  margin-top:-50px;
+}
+
+.Welcome-img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 25px;
+  margin-top: -10px;
+  border: 5px solid green;
+}
+
+
+
+
