@@ -10,57 +10,89 @@
             display: flex;
             justify-content: center;
             color: skyblue;
+            font-size: 2rem;
         }
 
-         p{
-        margin-left: 15px;
-        font-family:'Libre Baskerville', Helvetica, sans-serif;
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        
         }
+
+        p{
+            font-size: 17px;
+            text-align: left;
+            width: 40%;
+        }
+         
 
         span{
             color: rgb(7, 99, 99);
         }
 
+        .footer{
+          margin-top: 285px;
+          position: absolute;
+          font-size: 14px;
+          width: 80%;
+        }
+
          @media(max-width:600px){
             h2{
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
 
             p{
-                font-size: 10px;
+                font-size: 15px;
+                text-align: left;
+                width: 70%;
             }
+
+            .footer{
+            margin-top: 285px;
+            position: absolute;
+             width: 60%;
+          }
+
         }
     </style>
 </head>
 <body>
-    <h2>ME AS A GRAPHIC DESIGNER</h2>
+    <div>
+      <h2>ME AS A GRAPHIC DESIGNER</h2>
+    </div>
     <hr>
     <br>
     <br>
-    <p>
-       It's a beautiful thing and a priviledge to be able to bring your creativity to life.
-    </p>
-    <p>
-        If you've read <a href="./My first year into tech.html">My first year into tech</a>, then you must by now know how it all started for me. <br/>
-        Graphic design was my first dive and passion into tech at the time. I really love the idea of<br/>
-        art and creating imaginative images and objects. It was'nt simple learning/knowing to use most<br/>
-        of the softwares but i always believe if i can accomplish my goals from the most difficult tools<br/> 
-        then it would be way more easy to with the well or most understood softwares or tools. I tried <br/>
-        out a few softwares to know how they are used and which was more convinient and now i undertand <br/>
-        why most people use the ones they do. At a point designing and creating logos wasn't simple cause<br/>
-        it had to do with alot of thinking and positioning but i practiced more and got better on my skills<br/>
-        and logo designing. As a graphic designer it's required of you to find you're niche in the few aspects<br/> 
-        of graphic design and so i found mine in a few including <span>logo designs, branding and print projects</span>.
-    </p>
-    <p>
-        I love designing, i love being creative and i love being a graphic designer.
-    </p>
+    <div class="container">
+            <p>
+              It's a beautiful thing and a priviledge to be able to bring your creativity to life.
+               <br/>  <br/>
+            
+               If you've read <a href="./My first year into tech.html">My first year into tech</a>, then you must by now know how it all started for me. 
+               Graphic design was my first dive and passion into tech at the time. I really love the idea of
+               art and creating imaginative images and objects. It was'nt simple learning/knowing to use most
+               of the softwares but i always believe if i can accomplish my goals from the most difficult tools
+              then it would be way more easy to with the well or most understood softwares or tools. I tried 
+              out a few softwares to know how they are used and which was more convinient and now i undertand 
+              why most people use the ones they do. At a point designing and creating logos wasn't simple cause
+              it had to do with alot of thinking and positioning but i practiced more and got better on my skills
+              and logo designing. As a graphic designer it's required of you to find you're niche in the few aspects
+              of graphic design and so i found mine in a few including <span>logo designs, branding and print projects</span>.
+            
+               <br/>  <br/>
+        
+               I love designing, i love being creative and i love being a graphic designer.
+            </p>
+   </div>
     <br>
     <br>
     <br>
-    <font class="inshot" size="1">
+    <font class="footer" size="1">
         <font color="#cccccc">
-             © Thomas Anigbo pg
+            <p class="footer"> © Thomas Anigbo pg <script>document.write(new Date().getFullYear());</script></p>
         </font>
     </font>
 </body>

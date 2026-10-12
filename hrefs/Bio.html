@@ -1,218 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:wght@600&display=swap" rel="stylesheet">
-    <title>bio</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:wght@600&display=swap" rel="stylesheet">
+  <title>bio</title>
+<style>
 
-        p{font-family: 'Arimo', Libre Baskerville;}
+  p{font-family: 'Arimo', Libre Baskerville;
+    text-align: left;
+    flex-wrap: wrap;
+    font-size: 17px;
+    width: 20%;
+  }
 
-        .container{
-        margin-left: 140px;
-        margin-top: -150px;
-     }
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    margin-left: 45px;
+  }
 
-        h2{
-            display: flex;
-            justify-content: center;
-            color: skyblue;
-        }
+  h2{
+    display: flex;
+    justify-content: center;
+    color: skyblue;
+    font-size: 2rem;
+  }
 
-        .home{
+  .home{
     width: 80px;
     margin-top: -11px;
     position: absolute;
-        }
+  }
 
 
 
-.twitter{
+  .x{
+    width: 80px;
+    margin-top: 5px;
+    position: absolute;
+  }
+
+  .essays{
+    width: 80px;
+    margin-top: -10px;
+    position: absolute;
+  }
+
+  .faq{
+    width: 80px;
+    margin-top: 42px;
+    position: absolute;
+  }
+
+  .quotes{
+    width: 80px;
+    position: absolute;
+    margin-top: 62px;
+  }
+
+  .raq{
+    width: 80px;
+    position: absolute;
+    margin-top: 69px;
+  }
+
+  .projects{
+    width: 80px;
+    position: absolute;
+    margin-top: 88px;
+  }
+
+  .instagram{
   width: 80px;
-   margin-top: 5px;
-   position: absolute;
+  position: absolute;
+  margin-top: 94px;
 }
 
-.essays{
-  width: 80px;
- margin-top: -10px;
- position: absolute;
-}
-
-.faq{
-  width: 80px;
- margin-top: 11px;
- position: absolute;
-}
-
-.quotes{
-   width: 80px;
- position: absolute;
- margin-top: 31px;
-}
-
-.raq{
- width: 80px;
- position: absolute;
- margin-top: 39px;
-}
-
-.projects{
-   width: 80px;
-   position: absolute;
-   margin-top: 58px;
-}
-
-.website{
-  width: 80px;
-   position: absolute;
-   margin-top: 64px;
-}
-
-.inshot{
- top:200px;
- position: relative;
-}
+  .inshot{
+    top:200px;
+    position: relative;
+  }
 
 
-#photo{
-    width: 90px;
+  #photo{
+    width: 150px;
     border-radius: 10px;
     border: 3px solid skyblue;
     float: left;
-    padding: 0px;
     margin: 10px;
     margin-bottom: -5px;
-}
+  }
 
-@media(max-width: 600px){
-     .container{
-        margin-left: 90px;
-        margin-top: -180px;
-     }
-   
-    h2{
-        font-size: 1rem;
+  .footer{
+      margin-top: 185px;
+      position: absolute;
+      font-size: 14px;
+      width: 80%;
     }
 
-     p{
-         font-size: 10px;
-     }
+  @media(max-width: 600px){
 
-     .home{
-            margin-top: -20px;
-            width: 3rem;
-        }
+    .container{
+      margin-left: 120px;
+      margin-top: -180px;
+    }
+   
+    h2{
+      font-size: 1.5rem;
+    }
 
-        .essays{
-            margin-top: -34px;
-             width: 3rem;
-        }
+    p{
+      font-size: 17px;
+      text-align: left;
+      flex-wrap: wrap;
+      width: 50%;
+    }
 
-        .twitter{
-            margin-top: -32px;
-             width: 3rem;
-        }
+    .item{
+      width: 5rem;
+    }
 
-        .faq{
-            margin-top: -35px;
-             width: 3rem;
-        }
+    .home{
+      margin-top: 5pxpx;
+    }
 
-        .quotes{
-            margin-top: -30px;
-             width: 3rem;
-        }
+    .essays{
+      margin-top: -10px;
+    }
 
-        .raq{
-            margin-top: -33px;
-             width: 3rem;
-        }
+    .x{
+      margin-top: 5px;
+    }
 
-        .projects{
-            margin-top: -29px;
-             width: 3rem;
-        }
+    .faq{
+      margin-top: 42px;
+    }
 
-        .website{
-            margin-top: -32px;
-             width: 3rem;
-        }
+    .quotes{
+      margin-top: 62px;
+    }
 
-           .shot{
-        height: 0px;
-        width: 100px;}
+    .raq{
+      margin-top: 69px;
+    }
 
-        #photo{
-            width: 63px;
-        }
+    .projects{
+      margin-top: 88px;
+    }
 
-}
-    </style>
+    .instagram{
+      margin-top: 94px;
+    }
+
+    .shot{
+      height: 0px;
+      width: 100px;
+    }
+
+    #photo{
+      width: 120px;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    .footer{
+      margin-top: 185px;
+      position: absolute;
+      width: 60%;
+    }
+
+
+  }
+
+</style>
 </head>
 <body>
+  <div>
     <h2>Bio</h2>
+  </div>
      <hr>
      <br/>
      <br>
      <br>
     <div>
-      <a href="https://thomas-i-a.github.io/thomas-anigbo/"> 
-      <img class="home"  src="../images/home.png" alt="home" /></a>
+      <a href="../index.html"><img class="home item"  src="../images/home.png" alt="home" /></a>
     </div>
     <br/>
     <br>
     <div>
-    <a href="../hrefs/Essays.html"><img class="essays" src="../images/essays.png" alt="essay"/></a>
+    <a href="../hrefs/Essays.html"><img class="essays item" src="../images/essays.png" alt="essay"/></a>
     </div>
     <br>
     <div>
-      <a href="https://x.com/thomasanigbo"><img class="twitter" src="../images/twitter.png" alt="twitter"/></a>
+      <a href="https://x.com/thomasanigbo"><img class="x item" src="../images/x.png" alt="twitter"/></a>
     </div>
     <br>
     <div>
-      <a href="../hrefs/faq.html"> <img class="faq" src="../images/faq.png" alt="faq"/></a>
+      <a href="../hrefs/faq.html"> <img class="faq item" src="../images/faq.png" alt="faq"/></a>
     </div>
     <br>
     <div>
-      <a href="../hrefs/quotes.html"> <img class="quotes" src="../images/quotes.png" alt="quotes"  /></a>
+      <a href="../hrefs/quotes.html"> <img class="quotes item" src="../images/quotes.png" alt="quotes"  /></a>
     </div>
     <br>
     <div>
-      <a href="../hrefs/raq.html"> <img class="raq" src="../images/raq.png" alt="raq" /></a>
+      <a href="../hrefs/raq.html"> <img class="raq item" src="../images/raq.png" alt="raq" /></a>
     </div>
     <br>
     <div>
-      <a href="../hrefs/projects.html"> <img class="projects" src="../images/project.png" alt="projects" /></a>
+      <a href="../hrefs/projects.html"> <img class="projects item" src="../images/project.png" alt="projects" /></a>
     </div>
-    <br>
+    <br/>
     <div>
-      <a href=""> <img class="website" src="../images/website.png" alt="website" /></a>
+      <a href="https://www.instagram.com/thomasanigbo/"> <img class="instagram item" src="/My BLOG/images/instagram.png" alt="instagram"></a>
     </div>
     
     <div class="container">
       <img id="photo" src="../images/my face card.jpg" alt="photo" />
       <br/>
       <p>
-         Thomas Anigbo is a graphic designer, programmer and entrepreneur with<br/>
-         good skills in writing and a passion for tech. In the year 2020 he started<br/>
-         his journey into tech and in 2023 he became the founder and ceo of<br/>
-         <a href="">GoodLife Graphics & Designs</a>, a company where he renders his graphic<br/>
-         design services and web developement.
+         Thomas Anigbo is a Graphic designer and Developer.
       </p>
    </div>
                    
-    <br>
-    <br>
-    <br>
-    <font class="inshot" size="1">
-        <font color="#cccccc">
-             © Thomas Anigbo pg
-        </font>
+   <br>
+   <br>
+   <br>
+  <font class="footer" size="1">
+    <font color="#cccccc">
+      <p class="footer"> © Thomas Anigbo pg <script>document.write(new Date().getFullYear());</script></p>
     </font>
+  </font>
 
 
 
