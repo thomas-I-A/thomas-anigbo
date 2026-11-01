@@ -80,6 +80,61 @@
         }
 
 
+        /* Base notification styles */
+.notification-banner {
+  border-radius: 6%;
+  position: fixed;
+  left: 344px;
+  width: 20%;
+  height: 30%;
+  background-color: #ae3535; /* Royal Blue background */
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Ensures it stays on top of all elements */
+  font-family: sans-serif;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Internal layout */
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification-text {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+/* Close button styling */
+.close-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.8;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
+
+/* Class to hide the notification smoothly */
+.notification-banner.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+
         @media(max-width: 600px){
           
           h2{
@@ -142,6 +197,13 @@
             width: 30%;
           }
 
+          .notification-banner{
+            left: 112px;
+            width: 40%;
+          }
+
+          
+
         }
 
     </style>
@@ -150,7 +212,17 @@
   <div>
     <h2>Essays</h2>
     <hr/>
-  </div>  
+  </div>
+
+  <div id="homepage-notification" class="notification-banner">
+  <div class="notification-content">
+    <span class="notification-icon"></span>
+    <p class="notification-text">Welcome! If you want to read something personal, read <strong>31-3-2004.</strong></p>
+  </div>
+  <button id="close-notification" class="close-btn" aria-label="Close notification">&times;</button>
+  </div>
+
+
     <table class="table" cellspacing="0" cellpadding="0">   
         <tbody>
             <tr valign="top">
@@ -228,11 +300,28 @@
 
 
     <script type="text/javascript">
-      alert("If you want to read something personal,read 31-3-2004");
+      // alert("If you want to read something personal,read 31-3-2004");
+
+      document.addEventListener("DOMContentLoaded", () => {
+  const notification = document.getElementById("homepage-notification");
+  const closeBtn = document.getElementById("close-notification");
+
+  // Check if the user has already dismissed this notification
+  // if (localStorage.getItem("homepageNotificationDismissed") === "true") {
+  //   notification.classList.add("hidden");
+  // }
+
+  // Hide the notification when the close button is clicked
+  closeBtn.addEventListener("click", () => {
+    notification.classList.add("hidden");
+    
+    // Save selection so it doesn't show up on next refresh
+    // localStorage.setItem("homepageNotificationDismissed", "true");
+  });
+});
 
 
     </script>
-    <script src="index.js" charset="utf-8"> </script>
 </body>
 </html>
 
